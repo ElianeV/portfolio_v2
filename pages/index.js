@@ -11,14 +11,17 @@ export default function Home() {
       </Head>
 
       <main className="flex">
-        <div className="w-1/2 h-[600px] overflow-hidden rounded-2xl">
+        <div className="w-2/3 h-[600px] relative overflow-hidden rounded-2xl">
           <Image
             src="/bg-orbs.png"
             alt="yellow and green orbs"
-            width={800}
-            height={800}
+            width={2000}
+            height={2000}
             className="blur-3xl opacity-70"
           />
+          <p className="absolute top-0 p-12 text-5xl tracking-tight">
+            Hey, I'm Eliane, a web developer
+          </p>
         </div>
         <div className="relative w-1/3 rounded-2xl overflow-hidden">
           <Image
