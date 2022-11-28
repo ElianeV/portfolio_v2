@@ -11,8 +11,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="flex">
-        <div className="w-full md:w-2/3 md:h-[600px] mx-4 relative overflow-hidden rounded-2xl">
+      <main className="pt-20 flex">
+        <div className="w-full md:w-2/3 md:h-[500px] mx-4 relative overflow-hidden rounded-2xl">
           <Image
             src="/bg-orbs.png"
             alt="yellow and green orbs"
@@ -20,11 +20,10 @@ export default function Home() {
             height={2000}
             className="blur-3xl opacity-70"
           />
-          <div className="sm:w-3/4 absolute top-0 p-12 ">
-            <h1 className="text-5xl tracking-tight">
-              Hey, I'm Eliane, a web developer
-            </h1>
-            <p>
+          <div className="sm:w-3/4 absolute top-0 p-12">
+            <h1 className="text-6xl leading-normal">Hey, I'm Eliane.</h1>
+            <h2 className="uppercase tracking-widest">Frontend developer</h2>
+            <p className="mb-40">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
               eiusmod tempor incididunt ut labore et dolore magna aliqua. Risus
               ultricies tristique nulla aliquet. Congue mauris rhoncus aenean
@@ -48,45 +47,61 @@ export default function Home() {
       </main>
       <section>
         <div className="square-container">
-          <article className="square basis-full sm:basis-[calc(50%-30px)] bg-[#0e395c]">
-            <div className="content px-12 py-10 text-white">
-              <button className="w-12 h-12 rounded-full bg-white absolute top-10 right-12 text-black text-center text-2xl">
-                ↗
-              </button>
-              <h2 className="tracking-[0.3rem] font-semibold">MAUSOLEUM</h2>
+          <article className="square basis-full md:basis-[calc(50%-30px)] bg-[#0e395c]">
+            <div className="content flex flex-col items-center justify-between lg:py-10 text-white">
+              <div>
+                <button className="w-12 h-12 rounded-full bg-white absolute top-10 right-12 text-black text-center text-2xl">
+                  ↗
+                </button>
+                <h2 className="lg:px-12 tracking-[0.3rem] text-2xl">
+                  MAUSOLEUM
+                </h2>
+                <h3 className="lg:px-12 mb-2">freelance</h3>
+                <p className="lg:px-12 mb-2 text-justify font-thin">
+                  Software for mouse colony management. My client needed a
+                  modern website and required the ability to update its
+                  contents.
+                  <br />
+                  <li>
+                    Sanity.io headless CMS connected to a React front-end using
+                    Next.js.
+                  </li>
+                </p>
+              </div>
+              <div className="w-10/12">
+                <img src="/mausoleumMockup.png" alt="bg" />
+              </div>
+            </div>
+          </article>
+          <article class="square basis-full md:basis-[calc(50%-30px)] bg-[#ecd386]">
+            <div class="content">
+              <h2>ZENDAY</h2>
               <h3>freelance</h3>
               <p>This is where the description would go</p>
             </div>
           </article>
-          <article class="square basis-full sm:basis-[calc(50%-30px)] bg-[#ecd386]">
+          <article class="square basis-full md:basis-[calc(50%-30px)] bg-[#8e0050]">
             <div class="content">
               <h2>Mausoleum</h2>
               <h3>freelance</h3>
               <p>This is where the description would go</p>
             </div>
           </article>
-          <article class="square basis-full sm:basis-[calc(50%-30px)] bg-[#8e0050]">
+          <article class="square basis-full md:basis-[calc(50%-30px)] bg-[#f7bdbf]">
             <div class="content">
               <h2>Mausoleum</h2>
               <h3>freelance</h3>
               <p>This is where the description would go</p>
             </div>
           </article>
-          <article class="square basis-full sm:basis-[calc(50%-30px)] bg-[#f7bdbf]">
+          <article class="square basis-full md:basis-[calc(50%-30px)] bg-[#234a47]">
             <div class="content">
               <h2>Mausoleum</h2>
               <h3>freelance</h3>
               <p>This is where the description would go</p>
             </div>
           </article>
-          <article class="square basis-full sm:basis-[calc(50%-30px)] bg-[#234a47]">
-            <div class="content">
-              <h2>Mausoleum</h2>
-              <h3>freelance</h3>
-              <p>This is where the description would go</p>
-            </div>
-          </article>
-          <article class="square basis-full sm:basis-[calc(50%-30px)] bg-[#9e8dfa]">
+          <article class="square basis-full md:basis-[calc(50%-30px)] bg-[#9e8dfa]">
             <div class="content">
               <h2>Mausoleum</h2>
               <h3>freelance</h3>
