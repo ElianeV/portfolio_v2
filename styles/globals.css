@@ -19,11 +19,6 @@ a {
   box-sizing: border-box;
 }
 
-.square-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
 .square {
   position: relative;
   margin: 15px;
