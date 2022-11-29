@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithubSquare } from "@fortawesome/free-brands-svg-icons";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import Project from "../components/project";
 
 export default function Home() {
   return (
@@ -63,46 +64,23 @@ export default function Home() {
       </main>
       <section>
         <div className="w-full flex flex-wrap">
-          <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#0e395c] rounded-2xl">
-            <div className="relative p-4 xs:p-8 text-white">
-              <button className="absolute top-4 right-4 xs:top-8 xs:right-8 w-8 h-8 xs:w-12 xs:h-12 rounded-full bg-white text-black text-center text-base xs:text-2xl">
-                ↗
-              </button>
-              <h2 className="tracking-[0.1rem] xs:tracking-[0.2rem] sm:tracking-[0.3rem] text-lg sm:text-2xl">
-                MAUSOLEUM
-              </h2>
-              <h3 className="mb-8">freelance</h3>
-              <p className="text-justify font-thin">
-                Software for mouse colony management. My client needed a modern
-                website and required the ability to update its contents.
-              </p>
-              <ul className="ml-4 list-disc mb-8">
-                <li className="font-thin">
-                  Sanity.io headless CMS connected to a React front-end using
-                  Next.js.
-                </li>
-              </ul>
-              <img
-                src="/mausoleumMockup.png"
-                alt="bg"
-                className="w-10/12 mx-auto"
-              />
-            </div>
+          <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#0e395c] rounded-2xl text-white">
+            <Project
+              title="MAUSOLEUM"
+              type="freelance"
+              description="Software for mouse colony management. My client needed a modern
+          website and required the ability to update its contents."
+              technologies="Sanity.io headless CMS connected to a React front-end using Next.js."
+            />
           </article>
-
           <article className="mr-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#ecd386] rounded-2xl">
-            <div className="content">
-              <h2>ZENDAY</h2>
-              <h3>freelance</h3>
-              <p>This is where the description would go</p>
-            </div>
-          </article>
-          <article className="square basis-full md:basis-[calc(50%-30px)] bg-[#8e0050]">
-            <div className="content">
-              <h2>Mausoleum</h2>
-              <h3>freelance</h3>
-              <p>This is where the description would go</p>
-            </div>
+            <Project
+              title="ZENDAY"
+              type="freelance"
+              description="Software for mouse colony management. My client needed a modern
+          website and required the ability to update its contents."
+              technologies="Sanity.io headless CMS connected to a React front-end using Next.js. "
+            />
           </article>
           <article className="square basis-full md:basis-[calc(50%-30px)] bg-[#f7bdbf]">
             <div className="content">
