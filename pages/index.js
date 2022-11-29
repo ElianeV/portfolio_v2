@@ -20,55 +20,45 @@ export default function Home() {
         ></Script>
       </Head>
       <Navbar />
-      <main className="pt-14 min-h-[450px] flex">
-        <div className="w-full md:w-2/3 md:h-[500px] mx-4 relative overflow-hidden rounded-2xl">
-          <Image
-            src="/bg-orbs.png"
-            alt="yellow and green orbs"
-            width={2000}
-            height={2000}
-            className="blur-3xl opacity-70"
-          />
-          <div className="p-4 sm:p-12 w-full lg:w-3/4 absolute top-0 ">
-            <h1 className="text-2xl font-semibold sm:text-6xl leading-normal">
-              Hey, I'm Eliane.
-            </h1>
-            <h2 className="uppercase text-sm sm:text-base tracking-widest mb-2">
-              Frontend developer
-            </h2>
-            <p className="mb-0 sm:mb-40 md:mb-24">
-              I am a creative web developer with a keen eye for design and
-              detail. Making websites look good is half the fun, hence why I
-              love everything CSS related. I have experience using HTML,
-              JavaScript, React, Next, Tailwind CSS, Sanity an other web
-              technologies.
-            </p>
-            <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-white bg-black rounded-full">
-              Contact me
-            </button>
-            <button className="w-10 h-10 mr-2">
-              <Link href="https://github.com/ElianeV" target="_blank">
-                <FontAwesomeIcon icon={faGithubSquare} size="xs" />
-              </Link>
-            </button>
-            <button className="w-10 h-10 mr-2">
-              <Link
-                href="https://www.linkedin.com/in/eliane-vdc/"
-                target="_blank"
-              >
-                <FontAwesomeIcon icon={faLinkedin} />
-              </Link>
-            </button>
+      <main className="w-full h-auto pt-14 flex">
+        <div className="w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover">
+          <div className="p-4 w-full h-full lg:w-3/4 xs:p-8 sm:p-12 flex flex-col justify-between backdrop-blur-md">
+            <div>
+              <h1 className="mb-2 text-2xl font-semibold xs:text-4xl sm:text-6xl">
+                Hey, I'm Eliane.
+              </h1>
+              <h2 className="mb-2 uppercase text-sm sm:text-base tracking-widest">
+                Frontend developer
+              </h2>
+              <p>
+                I am a creative web developer with a keen eye for design and
+                detail. Making websites look good is half the fun, hence why I
+                love everything CSS related. I have experience using HTML,
+                JavaScript, React, Next, Tailwind CSS, Sanity an other web
+                technologies.
+              </p>
+            </div>
+            <div>
+              <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-white bg-black rounded-full">
+                Contact me
+              </button>
+              <button className="w-7 sm:w-10 sm:h-10 mr-2">
+                <Link href="https://github.com/ElianeV" target="_blank">
+                  <FontAwesomeIcon icon={faGithubSquare} size="xs" />
+                </Link>
+              </button>
+              <button className="w-7 sm:w-10 sm:h-10 mr-2">
+                <Link
+                  href="https://www.linkedin.com/in/eliane-vdc/"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon icon={faLinkedin} />
+                </Link>
+              </button>
+            </div>
           </div>
         </div>
-        <div className="relative hidden md:block md:w-1/3 mr-5 rounded-2xl overflow-hidden">
-          <Image
-            src="/portrait.jpg"
-            fill
-            className="rounded-2xl object-cover"
-            alt="portrait"
-          />
-        </div>
+        <div className="w-1/3 min-h-[500px] mr-5 rounded-2xl overflow-hidden bg-[url('/portrait.jpg')] bg-cover"></div>
       </main>
       <section>
         <div className="flex flex-wrap">
@@ -140,7 +130,7 @@ export default function Home() {
         <div className="w-full mx-4 mb-4 h-96 relative overflow-hidden rounded-2xl">
           <Image
             src="/bg-blobs.png"
-            alt="yellow and green orbs"
+            alt="blobs"
             width={2000}
             height={2000}
             className="blur-3xl opacity-70"
