@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import Navbar from "../components/navbar";
 import Script from "next/script";
 import Link from "next/link";
@@ -20,7 +19,7 @@ export default function Home() {
         ></Script>
       </Head>
       <Navbar />
-      <main className="w-full h-auto pt-14 flex">
+      <main className="w-full h-auto pt-14 mb-4 flex">
         <div className="w-full md:w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover">
           <div className="w-full h-full backdrop-blur-3xl rounded-2xl">
             <div className="p-4 xs:p-8 w-full h-full lg:w-3/4 sm:p-12 flex flex-col justify-between ">
@@ -60,38 +59,38 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hidden md:block md:w-1/3 min-h-[450px] mr-5 rounded-2xl overflow-hidden bg-[url('/portrait.jpg')] bg-cover"></div>
+        <div className="hidden md:block md:w-1/3 min-h-[450px] mr-4 rounded-2xl overflow-hidden bg-[url('/portrait.jpg')] bg-cover"></div>
       </main>
       <section>
-        <div className="flex flex-wrap">
-          <article className="square basis-full md:basis-[calc(50%-30px)] bg-[#0e395c]">
-            <div className="content flex flex-col items-center justify-between lg:py-10 text-white">
-              <div>
-                <button className="w-12 h-12 rounded-full bg-white absolute top-10 right-12 text-black text-center text-2xl">
-                  ↗
-                </button>
-                <h2 className="lg:px-12 tracking-[0.3rem] text-2xl">
-                  MAUSOLEUM
-                </h2>
-                <h3 className="lg:px-12 mb-2">freelance</h3>
-                <p className="lg:px-12 text-justify font-thin">
-                  Software for mouse colony management. My client needed a
-                  modern website and required the ability to update its
-                  contents.
-                </p>
-                <ul className="ml-4 lg:px-12 list-disc mb-2">
-                  <li className="font-thin">
-                    Sanity.io headless CMS connected to a React front-end using
-                    Next.js.
-                  </li>
-                </ul>
-              </div>
-              <div className="w-10/12">
-                <img src="/mausoleumMockup.png" alt="bg" />
-              </div>
+        <div className="w-full flex flex-wrap">
+          <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#0e395c] rounded-2xl">
+            <div className="relative p-4 xs:p-8 text-white">
+              <button className="absolute top-4 right-4 xs:top-8 xs:right-8 w-8 h-8 xs:w-12 xs:h-12 rounded-full bg-white text-black text-center text-base xs:text-2xl">
+                ↗
+              </button>
+              <h2 className="tracking-[0.1rem] xs:tracking-[0.2rem] sm:tracking-[0.3rem] text-lg sm:text-2xl">
+                MAUSOLEUM
+              </h2>
+              <h3 className="mb-8">freelance</h3>
+              <p className="text-justify font-thin">
+                Software for mouse colony management. My client needed a modern
+                website and required the ability to update its contents.
+              </p>
+              <ul className="ml-4 list-disc mb-8">
+                <li className="font-thin">
+                  Sanity.io headless CMS connected to a React front-end using
+                  Next.js.
+                </li>
+              </ul>
+              <img
+                src="/mausoleumMockup.png"
+                alt="bg"
+                className="w-10/12 mx-auto"
+              />
             </div>
           </article>
-          <article className="square basis-full md:basis-[calc(50%-30px)] bg-[#ecd386]">
+
+          <article className="mr-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#ecd386] rounded-2xl">
             <div className="content">
               <h2>ZENDAY</h2>
               <h3>freelance</h3>
@@ -129,15 +128,8 @@ export default function Home() {
         </div>
       </section>
       <section className="flex">
-        <div className="w-full mx-4 mb-4 h-96 relative overflow-hidden rounded-2xl">
-          <Image
-            src="/bg-blobs.png"
-            alt="blobs"
-            width={2000}
-            height={2000}
-            className="blur-3xl opacity-70"
-          />
-          <div className="w-full absolute top-0 p-12 ">
+        <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover">
+          <div className="w-full h-full p-12 backdrop-blur-3xl rounded-2xl">
             <h1 className="text-5xl tracking-tight">Contact</h1>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
