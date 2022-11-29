@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Navbar() {
   return (
     <div className="max-w-7xl p-4 h-14 w-full fixed z-40 backdrop-blur-lg">
@@ -6,9 +8,13 @@ export default function Navbar() {
           ELIANE
         </div>
         <nav className="flex">
-          <a>Home</a>
-          <a className="ml-6">My work</a>
-          <a className="ml-6">Contact</a>
+          <Link href="#Home">Home</Link>
+          <Link href="#MyWork" className="ml-6">
+            My work
+          </Link>
+          <Link href="#Contact" className="ml-6">
+            Contact
+          </Link>
         </nav>
       </div>
     </div>
