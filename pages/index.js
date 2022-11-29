@@ -35,7 +35,7 @@ export default function Home() {
                   I am a creative web developer with a keen eye for design and
                   detail. Making websites look good is half the fun, hence why I
                   love everything CSS related. I have experience using HTML,
-                  JavaScript, React, Next, Tailwind CSS, Sanity an other web
+                  JavaScript, React, Next, Tailwind CSS, Sanity and other web
                   technologies.
                 </p>
               </div>
