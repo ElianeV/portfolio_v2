@@ -43,9 +43,11 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-white bg-black rounded-full">
-                  Contact me
-                </button>
+                <Link href="#Contact">
+                  <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-white bg-black rounded-full">
+                    Contact me
+                  </button>
+                </Link>
                 <button className="w-7 sm:w-10 sm:h-10 mr-2">
                   <Link href="https://github.com/ElianeV" target="_blank">
                     <FontAwesomeIcon icon={faGithubSquare} size="xs" />
@@ -77,6 +79,7 @@ export default function Home() {
                 "Sanity.io headless CMS connected to a React front-end using Next.js.",
               ]}
               image="/mausoleumMockup.png"
+              url="/"
             />
           </article>
           <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#ecd386] rounded-2xl">
@@ -87,42 +90,48 @@ export default function Home() {
           website and required the ability to update its contents."
               technologies={["Test", "Hello", "World"]}
               image="/mausoleumMockup.png"
+              url="/"
             />
           </article>
           <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#8e0050] rounded-2xl text-white">
             <Project
               title="WHAT DO YOU FEEL LIKE"
               type="personal project"
-              description="Online recipes"
-              technologies={["Test", "Hello", "World"]}
+              description="What do you feel like... Pasta? Something spicy? Dessert? Save your recipes in this digital cookbook. Upload your own images, filter through different categories, modify recipes on the spot, etc."
+              technologies={["Created using???"]}
               image="/mausoleumMockup.png"
+              url="/"
+              reference="https://jgillan.com"
             />
           </article>
           <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#f7bdbf] rounded-2xl">
             <Project
               title="BENDY CANDLE"
               type="personal project"
-              description="bendy candle"
-              technologies={["Test", "Hello", "World"]}
+              description="Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's completely hands-free!"
+              technologies={["Created using Sass, JavaScript and React"]}
               image="/bendycandleMockup.png"
+              url="https://www.bendycandle.com/"
             />
           </article>
           <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#234a47] rounded-2xl text-white">
             <Project
               title="OUT BOULDERING"
               type="personal project"
-              description="bouldering app"
-              technologies={["Test", "Hello", "World"]}
+              description="The weather in Ireland is changeable and it often rains which is not ideal if you want to go outdoor bouldering. Using the OpenWeatherMap API we provide the 4 day weather forecast for the most popular bouldering locations in the country. Get a swift overview and plan your perfect climbing trip."
+              technologies={["Created using Sass, JavaScript and React"]}
               image="/outboulderingMockup.png"
+              url="https://outbouldering.netlify.app/"
             />
           </article>
           <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#9e8dfa] rounded-2xl">
             <Project
               title="DAILY DOSE"
               type="personal project"
-              description="habit tracker"
-              technologies={["Test", "Hello", "World"]}
+              description="With Daily Dose you can track your daily habits. Easily add or remove habits, set goals and track your overall progress. This full-stack app is still under development but the website is live."
+              technologies={["Created using Tailwind, TypeScript and Prisma"]}
               image="/dailydoseMockup.png"
+              url="http://habit-tracker-two.vercel.app"
             />
           </article>
         </div>
