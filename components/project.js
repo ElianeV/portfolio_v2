@@ -9,7 +9,6 @@ export default function Project({
   url,
   reference,
 }) {
-  console.log(title);
   return (
     <div className="h-full relative p-4 xs:p-8 lg:p-12 flex flex-col justify-between">
       <div>
