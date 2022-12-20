@@ -13,7 +13,7 @@ import ContactForm from "../components/contactForm";
 export default function Home() {
   return (
     <div className="bg-slate-100">
-      <div id="Home" className="max-w-7xl mx-auto">
+      <div id="Home" className="">
         <Head>
           <title>ELIANE.CODES - Web development</title>
           <meta
@@ -27,8 +27,8 @@ export default function Home() {
           ></Script>
         </Head>
         <Navbar />
-        <main className="w-full h-auto pt-14 mb-4 flex">
-          <div className="w-full md:w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover shadow-lg text-neutral-800">
+        <main className="w-full max-w-7xl mx-auto h-auto pt-14 mb-4 flex">
+          <div className="w-full md:w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover shadow-lg text-slate-700">
             <div className="w-full h-full backdrop-blur-3xl rounded-2xl">
               <div className="p-4 xs:p-8 w-full h-full lg:w-3/4 sm:p-12 flex flex-col justify-between ">
                 <div>
@@ -48,7 +48,7 @@ export default function Home() {
                 </div>
                 <div>
                   <Link href="#Contact">
-                    <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-gray-200 bg-neutral-800 rounded-full">
+                    <button className="align-top px-3 py-2 mr-2 text-xs sm:text-base sm:py-3 sm:px-6 text-gray-200 bg-slate-700 rounded-full">
                       Contact me
                     </button>
                   </Link>
@@ -71,7 +71,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block md:w-1/3 min-h-[450px] mr-4 rounded-2xl overflow-hidden bg-[url('/portrait.jpg')] bg-cover shadow-lg"></div>
         </main>
-        <section id="MyWork" className="pt-14">
+        <section id="MyWork" className="pt-14 max-w-7xl mx-auto">
           <div className="w-full flex flex-wrap">
             <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
@@ -140,10 +140,15 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section id="Contact" className="pt-14 flex">
-          <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover text-neutral-800">
-            <div className="w-full h-full p-12 backdrop-blur-3xl rounded-2xl">
-              <ContactForm />
+        <section id="Contact" className="pt-14 flex max-w-7xl mx-auto">
+          <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover text-slate-700">
+            <div className="w-full h-full p-8 lg:p-12 backdrop-blur-3xl rounded-2xl flex lg:flex-row flex-col justify-evenly">
+              <h1 className="w-full mb-8 lg:mb-2 lg:w-1/3 text-2xl font-semibold xs:text-4xl sm:text-6xl">
+                Contact me.
+              </h1>
+              <div className="w-full lg:w-2/3 rounded-2xl sm:p-8 sm:bg-white sm:bg-opacity-20">
+                <ContactForm />
+              </div>
             </div>
           </div>
         </section>
