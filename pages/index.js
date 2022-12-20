@@ -27,7 +27,7 @@ export default function Home() {
         </Head>
         <Navbar />
         <main className="w-full h-auto pt-14 mb-4 flex">
-          <div className="w-full md:w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover shadow-lg">
+          <div className="w-full md:w-2/3 mx-4 h-auto rounded-2xl bg-[url('/bg-orbs.png')] bg-cover shadow-lg text-neutral-800">
             <div className="w-full h-full backdrop-blur-3xl rounded-2xl">
               <div className="p-4 xs:p-8 w-full h-full lg:w-3/4 sm:p-12 flex flex-col justify-between ">
                 <div>
@@ -56,7 +56,7 @@ export default function Home() {
                       <FontAwesomeIcon icon={faGithubSquare} size="xs" />
                     </Link>
                   </button>
-                  <button id="MyWork" className="w-7 sm:w-10 sm:h-10 mr-2">
+                  <button className="w-7 sm:w-10 sm:h-10 mr-2">
                     <Link
                       href="https://www.linkedin.com/in/eliane-vdc/"
                       target="_blank"
@@ -70,8 +70,7 @@ export default function Home() {
           </div>
           <div className="hidden md:block md:w-1/3 min-h-[450px] mr-4 rounded-2xl overflow-hidden bg-[url('/portrait.jpg')] bg-cover shadow-lg"></div>
         </main>
-
-        <section>
+        <section id="MyWork" className="pt-14">
           <div className="w-full flex flex-wrap">
             <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
@@ -89,7 +88,6 @@ export default function Home() {
                 style="w-full px-12 py-4 rounded-b-2xl font-bold text-cyan-500 text-center word-spacing bg-slate-50"
               />
             </article>
-
             <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
                 title="WDYFL"
@@ -99,16 +97,14 @@ export default function Home() {
               />
               <Project
                 description="What do you feel like... Pasta? Something spicy? Dessert? Browse through your favorite recipes using this digital cookbook. Uploading and modifying recipies is quick and simple, you can add your own images, filter through different categories, etc."
-                technologies={["Created using???"]}
                 image="/recipesMockup.png"
                 reference="https://jgillan.com"
               />
               <BottomProject
-                technologies={["??? Next.js TailwindCSS"]}
+                technologies={["PostgreSQL Prisma Next.js TailwindCSS"]}
                 style="w-full px-12 py-4 rounded-b-2xl font-bold text-pink-500 text-center word-spacing bg-slate-50"
               />
             </article>
-
             <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
                 title="BENDY CANDLE"
@@ -143,8 +139,8 @@ export default function Home() {
             </article>
           </div>
         </section>
-        <section id="Contact" className="flex">
-          <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover">
+        <section id="Contact" className="pt-14 flex">
+          <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover text-neutral-800">
             <div className="w-full h-full p-12 backdrop-blur-3xl rounded-2xl">
               <h1 className="text-5xl tracking-tight">Contact</h1>
               <p>
