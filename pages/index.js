@@ -78,7 +78,7 @@ export default function Home() {
                 title="MAUSOLEUM"
                 type="freelance"
                 url="/"
-                style="w-full px-12 pt-4 rounded-t-2xl bg-[#0e395c] relative text-white shadow-[inset_0_3px_0px_hsl(211,68%,40%)]"
+                style="w-full px-8 xs:px-12 pt-4 rounded-t-2xl bg-[#0e395c] relative text-white shadow-[inset_0_3px_0px_hsl(211,68%,40%)]"
               />
               <Project
                 description="My client needed a new website for their mouse colony management software. They wanted a more modern feel and required the ability to update the website's contents. I chose Sanity.io as the headless CMS and connected it to a React front-end using Next.js."
@@ -90,12 +90,12 @@ export default function Home() {
               />
             </article>
 
-            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg">
+            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
                 title="WDYFL"
                 type="personal project"
                 url="https://whatdoyoufeellike.vercel.app"
-                style="w-full px-12 pt-4 rounded-t-2xl bg-[#8e0050] relative text-white shadow-[inset_0_3px_0px_hsl(329,100%,37%)]"
+                style="w-full px-8 xs:px-12 pt-4 rounded-t-2xl bg-[#8e0050] relative text-white shadow-[inset_0_3px_0px_hsl(329,100%,37%)]"
               />
               <Project
                 description="What do you feel like... Pasta? Something spicy? Dessert? Browse through your favorite recipes using this digital cookbook. Uploading and modifying recipies is quick and simple, you can add your own images, filter through different categories, etc."
@@ -108,26 +108,37 @@ export default function Home() {
                 style="w-full px-12 py-4 rounded-b-2xl font-bold text-pink-500 text-center word-spacing bg-slate-50"
               />
             </article>
-            <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#f7bdbf] first: rounded-2xl ">
-              {" "}
-              <Project
+
+            <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
+              <TopProject
                 title="BENDY CANDLE"
                 type="personal project"
-                description="Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's completely hands-free!"
-                technologies={["Created using Sass, JavaScript and React"]}
-                image="/bendycandleMockup.png"
                 url="https://www.bendycandle.com/"
+                style="w-full px-8 xs:px-12 pt-4 rounded-t-2xl bg-[#fc6464] relative text-white shadow-[inset_0_3px_0px_hsl(359,96%,78%)]"
+              />
+              <Project
+                description="Bendy Candle allows you to create a custom flexibility routine. Edit individual exercises and their duration to make stretching more or less challenging. Once you are satisfied with your routine you can start the automatic countdown. Follow the visual and auditory cues to switch positions. It's completely hands-free!"
+                image="/bendycandleMockup.png"
+              />
+              <BottomProject
+                technologies={["React JavaScript Sass"]}
+                style="w-full px-12 py-4 rounded-b-2xl font-bold text-[#fd8f90] text-center word-spacing bg-slate-50"
               />
             </article>
-            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#234a47] rounded-2xl text-white">
-              {" "}
-              <Project
+            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
+              <TopProject
                 title="OUT BOULDERING"
                 type="personal project"
-                description="The weather in Ireland is changeable and it often rains which is not ideal if you want to go outdoor bouldering. Using the OpenWeatherMap API we provide the 4 day weather forecast for the most popular bouldering locations in the country. Get a swift overview and plan your perfect climbing trip."
-                technologies={["Created using Sass, JavaScript and React"]}
-                image="/outboulderingMockup.png"
                 url="https://outbouldering.netlify.app/"
+                style="w-full px-8 sm:px-12 md:px-10 lg:px-12 pt-4 rounded-t-2xl bg-[#234a47] relative text-white shadow-[inset_0_3px_0px_hsl(179,59%,37%)]"
+              />
+              <Project
+                description="The weather in Ireland is changeable and it often rains which is not ideal if you want to go outdoor bouldering. Using the OpenWeatherMap API we provide the 4 day weather forecast for the most popular bouldering locations in the country. Get a swift overview and plan your perfect climbing trip."
+                image="/outboulderingMockup.png"
+              />
+              <BottomProject
+                technologies={["React JavaScript Sass"]}
+                style="w-full px-12 py-4 rounded-b-2xl font-bold text-[#279694] text-center word-spacing bg-slate-50"
               />
             </article>
           </div>

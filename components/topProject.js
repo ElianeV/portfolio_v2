@@ -8,7 +8,7 @@ export default function TopProject({ title, type, url, style }) {
           ↗
         </button>
       </Link>
-      <h2 className="tracking-[0.1rem] xs:tracking-[0.2rem] sm:tracking-[0.3rem] text-lg sm:text-2xl w-9/12">
+      <h2 className="w-auto tracking-[0.1rem] xs:tracking-[0.2rem] sm:tracking-[0.3rem] text-lg sm:text-2xl">
         {title}
       </h2>
       <button className="mb-4 px-2 border-solid rounded-full border-white border-[1px] cursor-default text-xs">
