@@ -1,4 +1,5 @@
-export default function BottomProject({ style, technologies, reference }) {
+import Link from "next/link";
+export default function BottomProject({ style, technologies }) {
   return (
     <div>
       {technologies.map((technology, index) => {
@@ -8,16 +9,6 @@ export default function BottomProject({ style, technologies, reference }) {
           </div>
         );
       })}
-      {reference ? (
-        <div className="font-light">
-          In collaboartion with{" "}
-          <Link href={reference} target="_blank">
-            <span className="underline">John Gillan</span>
-          </Link>
-        </div>
-      ) : (
-        ""
-      )}
     </div>
   );
 }

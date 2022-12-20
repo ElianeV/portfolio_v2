@@ -4,7 +4,7 @@ export default function TopProject({ title, type, url, style }) {
   return (
     <div className={style}>
       <Link href={url} target="_blank">
-        <button className="absolute top-4 right-4 xs:top-8 xs:right-8 lg:top-16 lg:right-8 w-8 h-8 xs:w-12 xs:h-12 rounded-full bg-white text-neutral-800 text-center text-base xs:text-2xl drop-shadow-[0_5px_5px_rgba(0,0,0,0.70)]">
+        <button className="absolute top-16 right-2 xs:right-6 lg:right-8 w-8 h-8 xs:w-12 xs:h-12 rounded-full bg-white text-neutral-800 text-center text-base xs:text-2xl drop-shadow-[0_5px_5px_rgba(0,0,0,0.70)]">
           ↗
         </button>
       </Link>

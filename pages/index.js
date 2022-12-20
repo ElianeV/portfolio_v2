@@ -73,7 +73,7 @@ export default function Home() {
 
         <section>
           <div className="w-full flex flex-wrap">
-            <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg">
+            <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg flex flex-col justify-between">
               <TopProject
                 title="MAUSOLEUM"
                 type="freelance"
@@ -89,15 +89,23 @@ export default function Home() {
                 style="w-full px-12 py-4 rounded-b-2xl font-bold text-cyan-500 text-center word-spacing bg-slate-50"
               />
             </article>
-            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#8e0050] rounded-2xl text-white">
-              <Project
-                title="WHAT DO YOU FEEL LIKE"
+
+            <article className="mx-4 md:ml-0 mb-4 w-full md:w-[calc(50%-1.5rem)] rounded-2xl bg-white shadow-lg">
+              <TopProject
+                title="WDYFL"
                 type="personal project"
-                description="What do you feel like... Pasta? Something spicy? Dessert? Save your recipes in this digital cookbook. Upload your own images, filter through different categories, modify recipes on the spot, etc."
+                url="https://whatdoyoufeellike.vercel.app"
+                style="w-full px-12 pt-4 rounded-t-2xl bg-[#8e0050] relative text-white shadow-[inset_0_3px_0px_hsl(329,100%,37%)]"
+              />
+              <Project
+                description="What do you feel like... Pasta? Something spicy? Dessert? Browse through your favorite recipes using this digital cookbook. Uploading and modifying recipies is quick and simple, you can add your own images, filter through different categories, etc."
                 technologies={["Created using???"]}
                 image="/recipesMockup.png"
-                url="https://whatdoyoufeellike.vercel.app"
                 reference="https://jgillan.com"
+              />
+              <BottomProject
+                technologies={["??? Next.js TailwindCSS"]}
+                style="w-full px-12 py-4 rounded-b-2xl font-bold text-pink-500 text-center word-spacing bg-slate-50"
               />
             </article>
             <article className="mx-4 mb-4 w-full md:w-[calc(50%-1.5rem)] bg-[#f7bdbf] first: rounded-2xl ">
