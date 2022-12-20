@@ -8,6 +8,7 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import Project from "../components/project";
 import TopProject from "../components/topProject";
 import BottomProject from "../components/bottomProject";
+import ContactForm from "../components/contactForm";
 
 export default function Home() {
   return (
@@ -142,14 +143,7 @@ export default function Home() {
         <section id="Contact" className="pt-14 flex">
           <div className="w-full mx-4 mb-4 rounded-2xl bg-[url('/bg-blobs.png')] bg-cover text-neutral-800">
             <div className="w-full h-full p-12 backdrop-blur-3xl rounded-2xl">
-              <h1 className="text-5xl tracking-tight">Contact</h1>
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Risus ultricies tristique nulla aliquet. Congue mauris rhoncus
-                aenean vel elit scelerisque mauris pellentesque. Egestas pretium
-                aenean pharetra magna ac placerat vestibulum lectus.
-              </p>
+              <ContactForm />
             </div>
           </div>
         </section>
