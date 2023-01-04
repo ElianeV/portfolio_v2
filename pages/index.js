@@ -77,7 +77,7 @@ export default function Home() {
               <TopProject
                 title="MAUSOLEUM"
                 type="freelance"
-                url="/"
+                url="https://mausoleum.vercel.app"
                 style="w-full px-8 xs:px-12 pt-4 rounded-t-2xl bg-[#0e395c] relative text-white shadow-[inset_0_3px_0px_hsl(211,68%,40%)]"
               />
               <Project
